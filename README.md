@@ -1,6 +1,6 @@
 # ✨ ytDownloader 
 
-<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/kavindu-aka-sid/ytdownloader"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/kavindu-aka-sid/ytdownloader">
+<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/kavindu-aka-sid/ytdownloader"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/kavindu-aka-sid/ytdownloader"> ![GitHub](https://img.shields.io/github/license/kavindu-aka-sid/ytDownloader)
 
 ## Features 
 
