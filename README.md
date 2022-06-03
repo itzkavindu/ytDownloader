@@ -1,6 +1,6 @@
 # ✨ ytDownloader 
 
-<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/kavindu-aka-sid/ytdownloader"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/kavindu-aka-sid/ytdownloader"> ![GitHub](https://img.shields.io/github/license/kavindu-aka-sid/ytDownloader)
+<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/kavindu-aka-sid/ytdownloader"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/kavindu-aka-sid/ytdownloader">
 
 ## Features 
 
@@ -26,6 +26,15 @@
 - To make sure it is the youtube video that you wish to download, please click the confirm button
 - You can now download the YouTube video by clicking on the Download button 
 - Once your download is successful, you will see a pop-up window saying **"Successfully Downloaded"**
+
+## Screenshots
+
+![image](https://user-images.githubusercontent.com/81173459/171811283-2dd31481-a81a-4a4d-9655-c4936490679a.png)
+
+
+
+![image](https://user-images.githubusercontent.com/81173459/171811881-199eda22-47b9-47e6-bfd8-cf5746dbca9a.png)
+
 
 
 # ❤ Thanks for your support and please star if you like it
