@@ -4,31 +4,34 @@
 
 ## Features 
 
-**Note : This is a Pre-release version. Future updates will include a GUI and more features**
-
 - YouTube videos in high quality can be downloaded
 - Open Source, Free to Use
-- Size less than 1 MB
+- Size less than 30mb
+- Featuring a simple graphical user interface
 
 ## Installation
 
-* Download ytdownloader.zip from the [Releases](https://github.com/kavindu-aka-sid/ytDownloader/releases) Page
- ![image](https://user-images.githubusercontent.com/81173459/171095761-c568b61c-2dc6-4cb9-836c-6ab77e6bd9cc.png)
+- Download the **ytDownloader** that is compatible with your operating system from the [Releases](https://github.com/kavindu-aka-sid/ytDownloader/releases) Page
 
-* Unzip the zip file
-* Open a terminal window in the folder where the zip file was extracted and run the following command:
-```pip install -r requirements.txt```
-
- ![image](https://user-images.githubusercontent.com/81173459/171096446-efec6d91-eba7-4855-95fb-d0b2fab6d39f.png)
+- Unzip the zip file
+- Install the fonts in the **Fonts** folder
+- In your extracted folder, run ytDownloader.exe
 
 ## How to use
 
-* Execute the **main.py** file and enter the link of the YouTube video you want to download
- ![image](https://user-images.githubusercontent.com/81173459/171097054-0bec0bef-cd01-4b04-a883-1f302e2e6aa3.png)
+### Note : Do not panic if ytDownloader seems to be stuck while processing a  task
 
-* Video is downloaded to the folder where main.py is located
- ![image](https://user-images.githubusercontent.com/81173459/171097171-89384ebe-d22f-46a6-a417-2d576596df61.png)
+- Copy and paste the YouTube link of the video you want to download  
+- Provide the directory that the video should be downloaded to
+- To make sure it is the youtube video that you wish to download, please click the confirm button
+- You can now download the YouTube video by clicking on the Download button 
+- Once your download is successful, you will see a pop-up window saying **"Successfully Downloaded"**
+
 
 # ❤ Thanks for your support and please star if you like it
-Made with [Pytube](https://github.com/pytube/pytube) </br>
+
+### Made with [Pytube](https://github.com/pytube/pytube) </br>
+### [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter/) is used to make the GUI
+
+
 <a href="https://www.buymeacoffee.com/kavindunimsara" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
