@@ -67,11 +67,11 @@ def confirm():
 
 
 def developer():
-    webbrowser.open_new(r"https://github.com/kavindu-aka-sid/")
+    webbrowser.open_new(r"https://github.com/itzkavindu/")
 
 
 def openweb():
-    webbrowser.open_new(r"https://github.com/kavindu-aka-sid/ytDownloader")
+    webbrowser.open_new(r"https://github.com/itzkavindu/ytDownloader")
 
 
 frame = customtkinter.CTkFrame(master=app,
