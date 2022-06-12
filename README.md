@@ -40,7 +40,7 @@
 
 
 # ❤ Thanks for your support and please star if you like it
-<img alt="Pytube" src="https://img.shields.io/badge/Made%20with-Pytube-9cf?style=for-the-badge&logo=github">
+<img alt="Pytube" src="https://img.shields.io/badge/Made%20with-Pytube-9cf?link=https://github.com/pytube/pytube?style=for-the-badge&logo=github">
 <img alt="Ctk" src="https://img.shields.io/badge/GUI%20was%20Made%20Using-CustomTkinter-9cf?style=for-the-badge&logo=github">
 
 
