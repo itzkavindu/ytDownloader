@@ -39,7 +39,7 @@
 
 # ❤ Thanks for your support and please star if you like it
 
-### Made with [Pytube](https://github.com/pytube/pytube) </br>
+### Made with [Pytube](https://github.com/pytube/pytube) 
 ### [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter/) is used to make the GUI
 
 
