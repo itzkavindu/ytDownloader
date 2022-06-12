@@ -1,37 +1,46 @@
-## Welcome to GitHub Pages
+# ytDownloader 
 
-You can use the [editor on GitHub](https://github.com/itzkavindu/ytDownloader/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/kavindu-aka-sid/ytdownloader"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/kavindu-aka-sid/ytdownloader">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Features 
 
-### Markdown
+- YouTube videos in high quality can be downloaded
+- Open Source, Free to Use
+- Size less than 30mb
+- Featuring a simple graphical user interface
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Installation
 
-```markdown
-Syntax highlighted code block
+- Download the **ytDownloader** that is compatible with your operating system from the [Releases](https://github.com/kavindu-aka-sid/ytDownloader/releases) Page
 
-# Header 1
-## Header 2
-### Header 3
+- Unzip the zip file
+- Install the fonts in the **Fonts** folder
+- In your extracted folder, run ytDownloader.exe
 
-- Bulleted
-- List
+## How to use
 
-1. Numbered
-2. List
+### Note : Do not panic if ytDownloader seems to be stuck while processing a  task
 
-**Bold** and _Italic_ and `Code` text
+- Copy and paste the YouTube link of the video you want to download  
+- Provide the directory that the video should be downloaded to
+- To make sure it is the youtube video that you wish to download, please click the confirm button
+- You can now download the YouTube video by clicking on the Download button 
+- Once your download is successful, you will see a pop-up window saying **"Successfully Downloaded"**
 
-[Link](url) and ![Image](src)
-```
+## Screenshots
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+![image](https://user-images.githubusercontent.com/81173459/171811283-2dd31481-a81a-4a4d-9655-c4936490679a.png)
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/itzkavindu/ytDownloader/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+![image](https://user-images.githubusercontent.com/81173459/171811881-199eda22-47b9-47e6-bfd8-cf5746dbca9a.png)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+
+# ❤ Thanks for your support and please star if you like it
+
+### Made with [Pytube](https://github.com/pytube/pytube) </br>
+### [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter/) is used to make the GUI
+
+
+<a href="https://www.buymeacoffee.com/kavindunimsara" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
