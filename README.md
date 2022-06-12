@@ -5,11 +5,14 @@
 ## Features 
 
 - YouTube videos in high quality can be downloaded
+- The ability to download MP3s
 - Open Source, Free to Use
 - Size less than 30mb
 - Featuring a simple graphical user interface
 
 ## Installation
+
+**Note : Install [ffmpeg](https://ffmpeg.org/) and then follow these steps**
 
 - Download the **ytDownloader** that is compatible with your operating system from the [Releases](https://github.com/kavindu-aka-sid/ytDownloader/releases) Page
 
@@ -28,19 +31,17 @@
 - Once your download is successful, you will see a pop-up window saying **"Successfully Downloaded"**
 
 ## Screenshots
-
-![image](https://user-images.githubusercontent.com/81173459/171811283-2dd31481-a81a-4a4d-9655-c4936490679a.png)
-
+![image](https://user-images.githubusercontent.com/81173459/173237013-e5aed54b-869b-4e08-a923-1f3fed523ae7.png)
 
 
-![image](https://user-images.githubusercontent.com/81173459/171811881-199eda22-47b9-47e6-bfd8-cf5746dbca9a.png)
+
+![image](https://user-images.githubusercontent.com/81173459/173237038-3ff1e1cf-d8fa-4140-8455-10fb16c80e96.png)
 
 
 
 # ❤ Thanks for your support and please star if you like it
-
-### Made with [Pytube](https://github.com/pytube/pytube) </br>
-### [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter/) is used to make the GUI
+<img alt="Pytube" src="https://img.shields.io/badge/Made%20with-Pytube-9cf?style=for-the-badge&logo=github">
+<img alt="Ctk" src="https://img.shields.io/badge/GUI%20was%20Made%20Using-CustomTkinter-9cf?style=for-the-badge&logo=github">
 
 
 <a href="https://www.buymeacoffee.com/kavindunimsara" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
