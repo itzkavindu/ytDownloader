@@ -12,11 +12,11 @@
 
 ## Installation
 
-- Download the **ytDownloader** that is compatible with your operating system from the [Releases](https://github.com/kavindu-aka-sid/ytDownloader/releases) Page
+- Download the **ytDownloader** that is compatible with your operating system from the [Releases](https://github.com/itzkavindu/ytDownloader/releases) Page
 
 - Unzip the zip file
 - Install the fonts in the **Fonts** folder
-- In your extracted folder, run ytDownloader.exe
+- In your extracted folder, run ytDownloader
 
 ## How to use
 
