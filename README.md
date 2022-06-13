@@ -7,12 +7,10 @@
 - YouTube videos in high quality can be downloaded
 - The ability to download MP3s
 - Open Source, Free to Use
-- Size less than 30mb
+- Size less than 15mb
 - Featuring a simple graphical user interface
 
 ## Installation
-
-**Note : Install [ffmpeg](https://ffmpeg.org/) and then follow these steps**
 
 - Download the **ytDownloader** that is compatible with your operating system from the [Releases](https://github.com/kavindu-aka-sid/ytDownloader/releases) Page
 
