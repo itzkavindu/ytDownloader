@@ -12,6 +12,8 @@ customtkinter.set_default_color_theme("blue")
 app = customtkinter.CTk()
 app.geometry("700x500")
 app.title("YTDownloader")
+img = tkinter.PhotoImage(file='ytdownloader.ico')
+app.tk.call('wm', 'iconphoto', app._w, img)
 
 # ----Fonts----
 ytdwntitle = ("BebasNeue", 25)
