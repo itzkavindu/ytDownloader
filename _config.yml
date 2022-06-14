@@ -1,2 +1,5 @@
 theme: jekyll-theme-architect
 show_downloads: true
+github:  
+    zip_url: https://github.com/itzkavindu/ytDownloader/releases
+    tar_url: https://github.com/itzkavindu/ytDownloader/releases
