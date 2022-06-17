@@ -10,7 +10,6 @@
 - YouTube videos in high quality can be downloaded
 - The ability to download MP3s
 - Open Source, Free to Use
-- Size less than 15mb
 - Featuring a simple graphical user interface
 
 ## Installation
