@@ -1,6 +1,7 @@
 import os
 import tkinter
 import webbrowser
+from tkinter import PhotoImage
 from tkinter import filedialog
 
 import customtkinter
@@ -13,8 +14,7 @@ customtkinter.set_default_color_theme("blue")
 app = customtkinter.CTk()
 app.geometry("700x500")
 app.title("YTDownloader")
-img = tkinter.PhotoImage(file='ytdownloader.ico')
-app.tk.call('wm', 'iconphoto', app._w, img)
+app.iconphoto(True, PhotoImage(file="ytdownloader.ico"))
 
 # ----Fonts----
 ytdwntitle = ("BebasNeue", 25)
@@ -72,6 +72,7 @@ def audio():
         outputs={f'{filepath}/{yt.title} - Audio.mp3': None})
     ff.run()
     os.remove(f'{filepath}/{yt.title}.webm')
+
     create_toplevel()
 
 
@@ -107,19 +108,22 @@ ytlink = customtkinter.CTkEntry(master=app,
                                 width=550, justify="center")
 ytlink.place(relx=0.1, rely=0.2)
 
+# ----------------------Destination-----------------------------
+
 destinationtext = customtkinter.CTkLabel(master=app,
                                          text="Destination | Select the destination by clicking the browse button",
                                          width=550,
                                          justify="center",
-                                         fg_color=("#424242"))
+                                         fg_color="#424242")
 destinationtext.place(relx=0.1, rely=0.3)
+
 
 # ----------------------Open Directory-----------------------------
 def directory():
     global filepath
-    # get a directory path by user
-    filepath=filedialog.askdirectory(title="Select A Dir")
+    filepath = filedialog.askdirectory(title="Select A Dir")
     destinationtext.configure(text=filepath, state="disabled")
+
 
 # ------------------------Confirm Button-------------------------
 confirmbtn = customtkinter.CTkButton(master=app, text="Confirm", command=confirm, fg_color="white", text_color="black",
@@ -149,13 +153,12 @@ audiodown.place(relx=0.355, rely=0.42, anchor=tkinter.CENTER)
 # -----------------------OpenDir Button-------------------------
 
 opendir = customtkinter.CTkButton(master=app, text="Browse",
-                                      command=directory,
-                                      fg_color="white",
-                                      text_color="black",
-                                      corner_radius=25,
-                                      hover_color="#757575", width=200, cursor="hand1", text_font=btns)
+                                  command=directory,
+                                  fg_color="white",
+                                  text_color="black",
+                                  corner_radius=25,
+                                  hover_color="#757575", width=200, cursor="hand1", text_font=btns)
 opendir.place(relx=0.65, rely=0.49, anchor=tkinter.CENTER)
-
 
 # --------------YTDownloader on GitHub Button---------------------
 
