@@ -1,6 +1,7 @@
 import os
 import tkinter
 import webbrowser
+from tkinter import filedialog
 
 import customtkinter
 import ffmpy
@@ -37,7 +38,7 @@ def run_app():
 
     ys = yt.streams.get_highest_resolution()
 
-    ys.download(output_path=destinationtext.get())
+    ys.download(output_path=filepath)
     create_toplevel()
 
 
@@ -65,12 +66,12 @@ def audio():
     yt = YouTube(link)
 
     ys = yt.streams.filter(only_audio=True, file_extension='webm').first()
-    ys.download(output_path=destinationtext.get())
+    ys.download(output_path=filepath)
     ff = ffmpy.FFmpeg(
-        inputs={f'{yt.title}.webm': None},
-        outputs={f'{yt.title} - Audio.mp3': None})
+        inputs={f'{filepath}/{yt.title}.webm': None},
+        outputs={f'{filepath}/{yt.title} - Audio.mp3': None})
     ff.run()
-    os.remove(f'{yt.title}.webm')
+    os.remove(f'{filepath}/{yt.title}.webm')
     create_toplevel()
 
 
@@ -106,18 +107,24 @@ ytlink = customtkinter.CTkEntry(master=app,
                                 width=550, justify="center")
 ytlink.place(relx=0.1, rely=0.2)
 
-destinationtext = customtkinter.CTkEntry(master=app,
-                                         placeholder_text="Destination | If you do not add a destination the video "
-                                                          "will be "
-                                                          "saved in the default location",
+destinationtext = customtkinter.CTkLabel(master=app,
+                                         text="Destination | Select the destination by clicking the browse button",
                                          width=550,
-                                         justify="center")
+                                         justify="center",
+                                         fg_color=("#424242"))
 destinationtext.place(relx=0.1, rely=0.3)
+
+# ----------------------Open Directory-----------------------------
+def directory():
+    global filepath
+    # get a directory path by user
+    filepath=filedialog.askdirectory(title="Select A Dir")
+    destinationtext.configure(text=filepath, state="disabled")
 
 # ------------------------Confirm Button-------------------------
 confirmbtn = customtkinter.CTkButton(master=app, text="Confirm", command=confirm, fg_color="white", text_color="black",
                                      corner_radius=25, hover_color="#757575", width=200, text_font=btns)
-confirmbtn.place(relx=0.5, rely=0.49, anchor=tkinter.CENTER)
+confirmbtn.place(relx=0.355, rely=0.49, anchor=tkinter.CENTER)
 
 # -----------------------Download Button-------------------------
 
@@ -138,6 +145,17 @@ audiodown = customtkinter.CTkButton(master=app, text="Download MP3",
                                     corner_radius=25,
                                     hover_color="#757575", width=200, cursor="hand1", text_font=btns)
 audiodown.place(relx=0.355, rely=0.42, anchor=tkinter.CENTER)
+
+# -----------------------OpenDir Button-------------------------
+
+opendir = customtkinter.CTkButton(master=app, text="Browse",
+                                      command=directory,
+                                      fg_color="white",
+                                      text_color="black",
+                                      corner_radius=25,
+                                      hover_color="#757575", width=200, cursor="hand1", text_font=btns)
+opendir.place(relx=0.65, rely=0.49, anchor=tkinter.CENTER)
+
 
 # --------------YTDownloader on GitHub Button---------------------
 
