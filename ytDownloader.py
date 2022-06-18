@@ -47,21 +47,20 @@ def run_app():
 
 def confirm():
     link = ytlink.get()
-    yt = YouTube(link)
 
-    vidtitle = yt.title
-    numviews = yt.views
-    vidlen = yt.length
+    if not link:
+        create_toplevel("YTDOWNLOADER - Error", "No valid link in input field")
+    else:
+        yt = YouTube(link)
+        title = customtkinter.CTkLabel(master=frame, text=f"Title : {yt.title}")
+        title.place(relx=0.05, rely=0.35, anchor="w")
 
-    title = customtkinter.CTkLabel(master=frame, text=f"Title : {vidtitle}")
-    title.place(relx=0.05, rely=0.35, anchor="w")
+        views = customtkinter.CTkLabel(master=frame, text=f"Number of Views : {yt.views}")
+        views.place(relx=0.05, rely=0.5, anchor="w")
 
-    views = customtkinter.CTkLabel(master=frame, text=f"Number of Views : {numviews}")
-    views.place(relx=0.05, rely=0.5, anchor="w")
-
-    length = customtkinter.CTkLabel(master=frame,
-                                    text=f"Length of Video : {vidlen} secs")
-    length.place(relx=0.05, rely=0.65, anchor="w")
+        length = customtkinter.CTkLabel(master=frame,
+                                        text=f"Length of Video : {yt.length} secs")
+        length.place(relx=0.05, rely=0.65, anchor="w")
 
 
 def audio():
@@ -98,7 +97,7 @@ frame = customtkinter.CTkFrame(master=app,
                                corner_radius=10,
                                border_width=7,
                                border_color="black",
-                               fg_color="#757575")
+                               fg_color="#181818")
 frame.place(relx=0.5, rely=0.7, anchor=tkinter.CENTER)
 
 # ----------------------------Title----------------------------
@@ -181,4 +180,6 @@ dev = customtkinter.CTkButton(master=app, text="YTDownloader by Kavindu Nimsara 
 dev.place(relx=0.5, rely=0.95, anchor=tkinter.CENTER)
 
 # -----------------------------------------------------------------
+
+
 app.mainloop()

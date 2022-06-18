@@ -1,4 +1,4 @@
 pytube~=12.1.0
-customtkinter~=4.3.0
+customtkinter~=4.4.1
 future~=0.18.2
 ffmpy~=0.3.0
