@@ -113,7 +113,7 @@ frame = customtkinter.CTkFrame(master=app,
                                corner_radius=10,
                                border_width=7,
                                border_color="black",
-                               fg_color="#757575")
+                               fg_color="#181818")
 frame.place(relx=0.5, rely=0.7, anchor=tkinter.CENTER)
 
 # ----------------------------Title----------------------------
