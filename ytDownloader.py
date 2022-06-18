@@ -23,9 +23,13 @@ finished = ("IndieFlower", 15)
 btns = ("RobotoMono", 10)
 creditfnt = ("Cantarell", 10)
 
+# ----Default file path----
+filepath = os.path.join(os.path.expanduser("~"), "Desktop")
+
 
 def main():
     ssl._create_default_https_context = ssl._create_unverified_context
+    directory(True)
     app.mainloop()
 
 
@@ -131,9 +135,12 @@ destinationtext.place(relx=0.1, rely=0.3)
 
 
 # ----------------------Open Directory-----------------------------
-def directory():
+def directory(first_run=False):
     global filepath
-    filepath = filedialog.askdirectory(title="Select A Dir")
+    if first_run:
+        destinationtext.configure(text=filepath, state="disabled")
+    else:
+        filepath = filedialog.askdirectory(title="Select A Dir")
     destinationtext.configure(text=filepath, state="disabled")
 
 
