@@ -37,7 +37,7 @@
 
 ![image](https://user-images.githubusercontent.com/81173459/173237038-3ff1e1cf-d8fa-4140-8455-10fb16c80e96.png)
 
-# Contributors
+# 🔧 Contributors
 
 <a href="https://github.com/itzkavindu/ytDownloader/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=itzkavindu/ytDownloader" />
