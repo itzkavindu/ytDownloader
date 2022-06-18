@@ -38,19 +38,6 @@ def create_toplevel(title, message):
     window.title(title)
 
 
-def run_app():
-    link = ytlink.get()
-    if not link:
-        create_toplevel("YTDOWNLOADER - Error", "No valid link in input field")
-    else:
-        yt = YouTube(link)
-
-        ys = yt.streams.get_highest_resolution()
-
-        ys.download(output_path=filepath)
-        create_toplevel("YTDOWNLOADER - Successfully Downloaded", "Successfully Downloaded")
-
-
 def confirm():
     link = ytlink.get()
     yt = YouTube(link)
@@ -70,7 +57,20 @@ def confirm():
     length.place(relx=0.05, rely=0.65, anchor="w")
 
 
-def audio():
+def download_mp4():
+    link = ytlink.get()
+    if not link:
+        create_toplevel("YTDOWNLOADER - Error", "No valid link in input field")
+    else:
+        yt = YouTube(link)
+
+        ys = yt.streams.get_highest_resolution()
+
+        ys.download(output_path=filepath)
+        create_toplevel("YTDOWNLOADER - Successfully Downloaded", "Successfully Downloaded")
+
+
+def download_mp3():
     link = ytlink.get()
     if not link:
         create_toplevel("YTDOWNLOADER - Error", "No valid link in input field")
@@ -145,7 +145,7 @@ confirmbtn.place(relx=0.355, rely=0.49, anchor=tkinter.CENTER)
 # -----------------------Download Button-------------------------
 
 downloadbtn = customtkinter.CTkButton(master=app, text="Download",
-                                      command=run_app,
+                                      command=download_mp4,
                                       fg_color="white",
                                       text_color="black",
                                       corner_radius=25,
@@ -155,7 +155,7 @@ downloadbtn.place(relx=0.65, rely=0.42, anchor=tkinter.CENTER)
 # ---------------------Download audio Button-----------------------
 
 audiodown = customtkinter.CTkButton(master=app, text="Download MP3",
-                                    command=audio,
+                                    command=download_mp3,
                                     fg_color="white",
                                     text_color="black",
                                     corner_radius=25,
