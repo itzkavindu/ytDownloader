@@ -151,7 +151,7 @@ confirmbtn.place(relx=0.355, rely=0.49, anchor=tkinter.CENTER)
 
 # -----------------------Download Button-------------------------
 
-downloadbtn = customtkinter.CTkButton(master=app, text="Download",
+downloadbtn = customtkinter.CTkButton(master=app, text="Download MP4",
                                       command=download_mp4,
                                       fg_color="white",
                                       text_color="black",
