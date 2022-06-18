@@ -1,4 +1,5 @@
 import os
+import ssl
 import tkinter
 import webbrowser
 from tkinter import PhotoImage
@@ -22,6 +23,15 @@ finished = ("IndieFlower", 15)
 btns = ("RobotoMono", 10)
 creditfnt = ("Cantarell", 10)
 
+# ----Default file path----
+filepath = os.path.join(os.path.expanduser("~"), "Desktop")
+
+
+def main():
+    ssl._create_default_https_context = ssl._create_unverified_context
+    directory(True)
+    app.mainloop()
+
 
 def create_toplevel(title, message):
     window = customtkinter.CTkToplevel()
@@ -32,7 +42,30 @@ def create_toplevel(title, message):
     window.title(title)
 
 
-def run_app():
+def confirm():
+    link = ytlink.get()
+    if not link:
+        create_toplevel("YTDOWNLOADER - Error", "No valid link in input field")
+    else:
+        yt = YouTube(link)
+
+        vidtitle = yt.title
+        numviews = yt.views
+        vidlen = yt.length
+
+        title = customtkinter.CTkLabel(master=frame, text=f"Title : {vidtitle}")
+        title.place(relx=0.05, rely=0.35, anchor="w")
+
+        views = customtkinter.CTkLabel(master=frame, text=f"Number of Views : {numviews:,}")
+        views.place(relx=0.05, rely=0.5, anchor="w")
+
+        length = customtkinter.CTkLabel(master=frame,
+                                        text=f"Length of Video : {vidlen} secs")
+        length.place(relx=0.05, rely=0.65, anchor="w")
+
+
+def download_mp4():
+    confirm()
     link = ytlink.get()
     if not link:
         create_toplevel("YTDOWNLOADER - Error", "No valid link in input field")
@@ -45,25 +78,8 @@ def run_app():
         create_toplevel("YTDOWNLOADER - Successfully Downloaded", "Successfully Downloaded")
 
 
-def confirm():
-    link = ytlink.get()
-
-    if not link:
-        create_toplevel("YTDOWNLOADER - Error", "No valid link in input field")
-    else:
-        yt = YouTube(link)
-        title = customtkinter.CTkLabel(master=frame, text=f"Title : {yt.title}")
-        title.place(relx=0.05, rely=0.35, anchor="w")
-
-        views = customtkinter.CTkLabel(master=frame, text=f"Number of Views : {yt.views}")
-        views.place(relx=0.05, rely=0.5, anchor="w")
-
-        length = customtkinter.CTkLabel(master=frame,
-                                        text=f"Length of Video : {yt.length} secs")
-        length.place(relx=0.05, rely=0.65, anchor="w")
-
-
-def audio():
+def download_mp3():
+    confirm()
     link = ytlink.get()
     if not link:
         create_toplevel("YTDOWNLOADER - Error", "No valid link in input field")
@@ -124,9 +140,12 @@ destinationtext.place(relx=0.1, rely=0.3)
 
 
 # ----------------------Open Directory-----------------------------
-def directory():
+def directory(first_run=False):
     global filepath
-    filepath = filedialog.askdirectory(title="Select A Dir")
+    if first_run:
+        destinationtext.configure(text=filepath, state="disabled")
+    else:
+        filepath = filedialog.askdirectory(title="Select A Dir")
     destinationtext.configure(text=filepath, state="disabled")
 
 
@@ -137,8 +156,8 @@ confirmbtn.place(relx=0.355, rely=0.49, anchor=tkinter.CENTER)
 
 # -----------------------Download Button-------------------------
 
-downloadbtn = customtkinter.CTkButton(master=app, text="Download",
-                                      command=run_app,
+downloadbtn = customtkinter.CTkButton(master=app, text="Download MP4",
+                                      command=download_mp4,
                                       fg_color="white",
                                       text_color="black",
                                       corner_radius=25,
@@ -148,7 +167,7 @@ downloadbtn.place(relx=0.65, rely=0.42, anchor=tkinter.CENTER)
 # ---------------------Download audio Button-----------------------
 
 audiodown = customtkinter.CTkButton(master=app, text="Download MP3",
-                                    command=audio,
+                                    command=download_mp3,
                                     fg_color="white",
                                     text_color="black",
                                     corner_radius=25,
@@ -180,6 +199,5 @@ dev = customtkinter.CTkButton(master=app, text="YTDownloader by Kavindu Nimsara 
 dev.place(relx=0.5, rely=0.95, anchor=tkinter.CENTER)
 
 # -----------------------------------------------------------------
-
-
-app.mainloop()
+if __name__ == "__main__":
+    main()
