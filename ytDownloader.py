@@ -44,21 +44,24 @@ def create_toplevel(title, message):
 
 def confirm():
     link = ytlink.get()
-    yt = YouTube(link)
+    if not link:
+        create_toplevel("YTDOWNLOADER - Error", "No valid link in input field")
+    else:
+        yt = YouTube(link)
 
-    vidtitle = yt.title
-    numviews = yt.views
-    vidlen = yt.length
+        vidtitle = yt.title
+        numviews = yt.views
+        vidlen = yt.length
 
-    title = customtkinter.CTkLabel(master=frame, text=f"Title : {vidtitle}")
-    title.place(relx=0.05, rely=0.35, anchor="w")
+        title = customtkinter.CTkLabel(master=frame, text=f"Title : {vidtitle}")
+        title.place(relx=0.05, rely=0.35, anchor="w")
 
-    views = customtkinter.CTkLabel(master=frame, text=f"Number of Views : {numviews:,}")
-    views.place(relx=0.05, rely=0.5, anchor="w")
+        views = customtkinter.CTkLabel(master=frame, text=f"Number of Views : {numviews:,}")
+        views.place(relx=0.05, rely=0.5, anchor="w")
 
-    length = customtkinter.CTkLabel(master=frame,
-                                    text=f"Length of Video : {vidlen} secs")
-    length.place(relx=0.05, rely=0.65, anchor="w")
+        length = customtkinter.CTkLabel(master=frame,
+                                        text=f"Length of Video : {vidlen} secs")
+        length.place(relx=0.05, rely=0.65, anchor="w")
 
 
 def download_mp4():
