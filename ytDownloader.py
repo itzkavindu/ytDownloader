@@ -23,23 +23,26 @@ btns = ("RobotoMono", 10)
 creditfnt = ("Cantarell", 10)
 
 
-def create_toplevel():
+def create_toplevel(title, message):
     window = customtkinter.CTkToplevel()
     window.geometry("400x200")
 
-    finishedwind = customtkinter.CTkLabel(window, text="Successfully Downloaded", text_font=finished)
+    finishedwind = customtkinter.CTkLabel(window, text=message, text_font=finished)
     finishedwind.pack(side="top", fill="both", expand=True, padx=40, pady=40)
-    window.title('YTDOWNLOADER - Successfully Downloaded')
+    window.title(title)
 
 
 def run_app():
     link = ytlink.get()
-    yt = YouTube(link)
+    if not link:
+        create_toplevel("YTDOWNLOADER - Error", "No valid link in input field")
+    else:
+        yt = YouTube(link)
 
-    ys = yt.streams.get_highest_resolution()
+        ys = yt.streams.get_highest_resolution()
 
-    ys.download(output_path=filepath)
-    create_toplevel()
+        ys.download(output_path=filepath)
+        create_toplevel("YTDOWNLOADER - Successfully Downloaded", "Successfully Downloaded")
 
 
 def confirm():
@@ -63,17 +66,20 @@ def confirm():
 
 def audio():
     link = ytlink.get()
-    yt = YouTube(link)
+    if not link:
+        create_toplevel("YTDOWNLOADER - Error", "No valid link in input field")
+    else:
+        yt = YouTube(link)
 
-    ys = yt.streams.filter(only_audio=True, file_extension='webm').first()
-    ys.download(output_path=filepath)
-    ff = ffmpy.FFmpeg(
-        inputs={f'{filepath}/{yt.title}.webm': None},
-        outputs={f'{filepath}/{yt.title} - Audio.mp3': None})
-    ff.run()
-    os.remove(f'{filepath}/{yt.title}.webm')
+        ys = yt.streams.filter(only_audio=True, file_extension='webm').first()
+        ys.download(output_path=filepath)
+        ff = ffmpy.FFmpeg(
+            inputs={f'{filepath}/{yt.title}.webm': None},
+            outputs={f'{filepath}/{yt.title} - Audio.mp3': None})
+        ff.run()
+        os.remove(f'{filepath}/{yt.title}.webm')
 
-    create_toplevel()
+        create_toplevel("YTDOWNLOADER - Successfully Downloaded", "Successfully Downloaded")
 
 
 def developer():
