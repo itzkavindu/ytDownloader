@@ -1,4 +1,5 @@
 import os
+import ssl
 import tkinter
 import webbrowser
 from tkinter import PhotoImage
@@ -21,6 +22,11 @@ ytdwntitle = ("BebasNeue", 25)
 finished = ("IndieFlower", 15)
 btns = ("RobotoMono", 10)
 creditfnt = ("Cantarell", 10)
+
+
+def main():
+    ssl._create_default_https_context = ssl._create_unverified_context
+    app.mainloop()
 
 
 def create_toplevel(title, message):
@@ -181,4 +187,5 @@ dev = customtkinter.CTkButton(master=app, text="YTDownloader by Kavindu Nimsara 
 dev.place(relx=0.5, rely=0.95, anchor=tkinter.CENTER)
 
 # -----------------------------------------------------------------
-app.mainloop()
+if __name__ == "__main__":
+    main()
