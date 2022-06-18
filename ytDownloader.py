@@ -53,7 +53,7 @@ def confirm():
     title = customtkinter.CTkLabel(master=frame, text=f"Title : {vidtitle}")
     title.place(relx=0.05, rely=0.35, anchor="w")
 
-    views = customtkinter.CTkLabel(master=frame, text=f"Number of Views : {numviews}")
+    views = customtkinter.CTkLabel(master=frame, text=f"Number of Views : {numviews:,}")
     views.place(relx=0.05, rely=0.5, anchor="w")
 
     length = customtkinter.CTkLabel(master=frame,
