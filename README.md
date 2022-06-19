@@ -31,11 +31,14 @@
 - Once your download is successful, you will see a pop-up window saying **"Successfully Downloaded"**
 
 ## Screenshots
-![image](https://user-images.githubusercontent.com/81173459/173237013-e5aed54b-869b-4e08-a923-1f3fed523ae7.png)
+![image](https://user-images.githubusercontent.com/81173459/174462331-7665777d-306c-44b3-b921-4c9913de2b62.png)
 
 
+![image](https://user-images.githubusercontent.com/81173459/174462695-45ee9760-2dd2-4143-b041-2c51be6e0e19.png)
 
-![image](https://user-images.githubusercontent.com/81173459/173237038-3ff1e1cf-d8fa-4140-8455-10fb16c80e96.png)
+
+![image](https://user-images.githubusercontent.com/81173459/174462749-4c900d92-be65-40bd-82c0-bed5988106e6.png)
+
 
 # 🔧 Contributors
 
