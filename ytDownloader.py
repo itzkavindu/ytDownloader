@@ -66,11 +66,12 @@ def confirm():
 
 
 def download_mp4():
-    confirm()
+
     link = ytlink.get()
     if not link:
         create_toplevel("YTDOWNLOADER - Error", "No valid link in input field")
     else:
+        confirm()
         yt = YouTube(link)
 
         ys = yt.streams.get_highest_resolution()
@@ -80,11 +81,12 @@ def download_mp4():
 
 
 def download_mp3():
-    confirm()
+
     link = ytlink.get()
     if not link:
         create_toplevel("YTDOWNLOADER - Error", "No valid link in input field")
     else:
+        confirm()
         yt = YouTube(link)
 
         ys = yt.streams.filter(only_audio=True, file_extension='webm').first()
@@ -99,11 +101,12 @@ def download_mp3():
 
 
 def download_webm():
-    confirm()
     link = ytlink.get()
     if not link:
         create_toplevel("YTDOWNLOADER - Error", "No valid link in input field")
     else:
+        confirm()
+
         yt = YouTube(link)
 
         ys = yt.streams.filter(file_extension='webm').first()
