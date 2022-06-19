@@ -15,6 +15,7 @@ customtkinter.set_default_color_theme("blue")
 app = customtkinter.CTk()
 app.geometry("700x500")
 app.title("YTDownloader")
+app.resizable(False, False)
 app.iconphoto(True, PhotoImage(file="ytdownloader.ico"))
 
 # ----Fonts----
@@ -96,6 +97,7 @@ def download_mp3():
 
         create_toplevel("YTDOWNLOADER - Successfully Downloaded", "Successfully Downloaded")
 
+
 def download_webm():
     confirm()
     link = ytlink.get()
@@ -108,6 +110,7 @@ def download_webm():
         ys.download(output_path=filepath)
 
         create_toplevel("YTDOWNLOADER - Successfully Downloaded", "Successfully Downloaded")
+
 
 def developer():
     webbrowser.open_new(r"https://github.com/itzkavindu/")
