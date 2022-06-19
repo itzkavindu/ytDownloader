@@ -96,6 +96,18 @@ def download_mp3():
 
         create_toplevel("YTDOWNLOADER - Successfully Downloaded", "Successfully Downloaded")
 
+def download_webm():
+    confirm()
+    link = ytlink.get()
+    if not link:
+        create_toplevel("YTDOWNLOADER - Error", "No valid link in input field")
+    else:
+        yt = YouTube(link)
+
+        ys = yt.streams.filter(file_extension='webm').first()
+        ys.download(output_path=filepath)
+
+        create_toplevel("YTDOWNLOADER - Successfully Downloaded", "Successfully Downloaded")
 
 def developer():
     webbrowser.open_new(r"https://github.com/itzkavindu/")
@@ -151,28 +163,38 @@ def directory(first_run=False):
 
 # ------------------------Confirm Button-------------------------
 confirmbtn = customtkinter.CTkButton(master=app, text="Confirm", command=confirm, fg_color="white", text_color="black",
-                                     corner_radius=25, hover_color="#757575", width=200, text_font=btns)
-confirmbtn.place(relx=0.355, rely=0.49, anchor=tkinter.CENTER)
+                                     corner_radius=25, hover_color="#757575", width=230, text_font=btns)
+confirmbtn.place(relx=0.329, rely=0.5, anchor=tkinter.CENTER)
 
 # -----------------------Download Button-------------------------
 
-downloadbtn = customtkinter.CTkButton(master=app, text="Download MP4",
+downloadbtn = customtkinter.CTkButton(master=app, text="Download .MP4",
                                       command=download_mp4,
                                       fg_color="white",
                                       text_color="black",
                                       corner_radius=25,
-                                      hover_color="#757575", width=200, cursor="hand1", text_font=btns)
-downloadbtn.place(relx=0.65, rely=0.42, anchor=tkinter.CENTER)
+                                      hover_color="#757575", width=160, cursor="hand1", text_font=btns)
+downloadbtn.place(relx=0.494, rely=0.42, anchor=tkinter.CENTER)
 
 # ---------------------Download audio Button-----------------------
 
-audiodown = customtkinter.CTkButton(master=app, text="Download MP3",
+audiodown = customtkinter.CTkButton(master=app, text="Download .MP3",
                                     command=download_mp3,
                                     fg_color="white",
                                     text_color="black",
                                     corner_radius=25,
-                                    hover_color="#757575", width=200, cursor="hand1", text_font=btns)
-audiodown.place(relx=0.355, rely=0.42, anchor=tkinter.CENTER)
+                                    hover_color="#757575", width=160, cursor="hand1", text_font=btns)
+audiodown.place(relx=0.25, rely=0.42, anchor=tkinter.CENTER)
+
+# ---------------------Download audio Button-----------------------
+
+webmdown = customtkinter.CTkButton(master=app, text="Download .WEBM",
+                                   command=download_webm,
+                                   fg_color="white",
+                                   text_color="black",
+                                   corner_radius=25,
+                                   hover_color="#757575", width=160, cursor="hand1", text_font=btns)
+webmdown.place(relx=0.74, rely=0.42, anchor=tkinter.CENTER)
 
 # -----------------------OpenDir Button-------------------------
 
@@ -181,8 +203,8 @@ opendir = customtkinter.CTkButton(master=app, text="Browse",
                                   fg_color="white",
                                   text_color="black",
                                   corner_radius=25,
-                                  hover_color="#757575", width=200, cursor="hand1", text_font=btns)
-opendir.place(relx=0.65, rely=0.49, anchor=tkinter.CENTER)
+                                  hover_color="#757575", width=230, cursor="hand1", text_font=btns)
+opendir.place(relx=0.68, rely=0.5, anchor=tkinter.CENTER)
 
 # --------------YTDownloader on GitHub Button---------------------
 
