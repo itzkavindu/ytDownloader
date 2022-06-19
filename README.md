@@ -8,7 +8,7 @@
 ## Features 
 
 - YouTube videos in high quality can be downloaded
-- The ability to download MP3s
+- The ability to download MP4s, MP3s, and WEBMs
 - Open Source, Free to Use
 - Featuring a simple graphical user interface
 
@@ -17,7 +17,7 @@
 - Download the **ytDownloader** that is compatible with your operating system from the [Releases](https://github.com/itzkavindu/ytDownloader/releases) Page
 
 - Unzip the zip file
-- Install the fonts in the **Fonts** folder
+- Install the fonts in the **Fonts** folder **(For Linux, execute Install-Fonts.sh to install fonts.)**
 - In your extracted folder, run ytDownloader
 
 ## How to use
@@ -26,7 +26,7 @@
 
 - Copy and paste the YouTube link of the video you want to download  
 - Provide the directory that the video should be downloaded to
-- To make sure it is the youtube video that you wish to download, please click the confirm button
+- To make sure it is the youtube video that you wish to download, click the confirm button
 - You can now download the YouTube video by clicking on the Download button 
 - Once your download is successful, you will see a pop-up window saying **"Successfully Downloaded"**
 
