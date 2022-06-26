@@ -1,21 +1,24 @@
-# ytDownloader 
+# ✨ ytDownloader 
 
-<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/kavindu-aka-sid/ytdownloader"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/kavindu-aka-sid/ytdownloader">
+<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/kavindu-aka-sid/ytdownloader"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/kavindu-aka-sid/ytdownloader"> <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/itzkavindu/ytDownloader/total?style=flat"> 
+![ytDownloader-banner](https://user-images.githubusercontent.com/81173459/173522511-48b2c0c8-bf12-4d87-9124-3127312afcfa.png)
+
+
 
 ## Features 
 
 - YouTube videos in high quality can be downloaded
+- The ability to download MP4s, MP3s, and WEBMs
 - Open Source, Free to Use
-- Size less than 30mb
 - Featuring a simple graphical user interface
 
 ## Installation
 
-- Download the **ytDownloader** that is compatible with your operating system from the [Releases](https://github.com/kavindu-aka-sid/ytDownloader/releases) Page
+- Download the **ytDownloader** that is compatible with your operating system from the [Releases](https://github.com/itzkavindu/ytDownloader/releases) Page
 
 - Unzip the zip file
-- Install the fonts in the **Fonts** folder
-- In your extracted folder, run ytDownloader.exe
+- Install the fonts in the **Fonts** folder **(For Linux, execute Install-Fonts.sh to install fonts.)**
+- In your extracted folder, run ytDownloader
 
 ## How to use
 
@@ -23,24 +26,31 @@
 
 - Copy and paste the YouTube link of the video you want to download  
 - Provide the directory that the video should be downloaded to
-- To make sure it is the youtube video that you wish to download, please click the confirm button
+- To make sure it is the youtube video that you wish to download, click the confirm button
 - You can now download the YouTube video by clicking on the Download button 
 - Once your download is successful, you will see a pop-up window saying **"Successfully Downloaded"**
 
 ## Screenshots
-
-![image](https://user-images.githubusercontent.com/81173459/171811283-2dd31481-a81a-4a4d-9655-c4936490679a.png)
-
+![image](https://user-images.githubusercontent.com/81173459/174462331-7665777d-306c-44b3-b921-4c9913de2b62.png)
 
 
-![image](https://user-images.githubusercontent.com/81173459/171811881-199eda22-47b9-47e6-bfd8-cf5746dbca9a.png)
+![image](https://user-images.githubusercontent.com/81173459/174462695-45ee9760-2dd2-4143-b041-2c51be6e0e19.png)
 
 
+![image](https://user-images.githubusercontent.com/81173459/174462749-4c900d92-be65-40bd-82c0-bed5988106e6.png)
+
+
+# 🔧 Contributors
+
+<a href="https://github.com/itzkavindu/ytDownloader/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=itzkavindu/ytDownloader" />
+</a>
+
+# License
+**ytDownloader is licensed under the terms of [GPL-3.0 License](https://github.com/itzkavindu/ytDownloader/blob/master/COPYING)**
 
 # ❤ Thanks for your support and please star if you like it
+<img alt="Pytube" src="https://img.shields.io/badge/Made%20with-Pytube-9cf?style=for-the-badge&logo=github">
+<img alt="Ctk" src="https://img.shields.io/badge/GUI%20was%20Made%20Using-CustomTkinter-9cf?style=for-the-badge&logo=github">
 
-### Made with [Pytube](https://github.com/pytube/pytube) 
-### [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter/) is used to make the GUI
-
-
-<a href="https://www.buymeacoffee.com/kavindunimsara" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/kavindunimsara)
