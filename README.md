@@ -46,6 +46,9 @@
   <img src="https://contrib.rocks/image?repo=itzkavindu/ytDownloader" />
 </a>
 
+# License
+**ytDownloader is licensed under the terms of [GPL-3.0 License](https://github.com/itzkavindu/ytDownloader/blob/master/COPYING)**
+
 # ❤ Thanks for your support and please star if you like it
 <img alt="Pytube" src="https://img.shields.io/badge/Made%20with-Pytube-9cf?style=for-the-badge&logo=github">
 <img alt="Ctk" src="https://img.shields.io/badge/GUI%20was%20Made%20Using-CustomTkinter-9cf?style=for-the-badge&logo=github">
