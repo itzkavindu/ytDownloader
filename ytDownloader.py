@@ -90,12 +90,12 @@ def download_mp3():
         yt = YouTube(link)
 
         ys = yt.streams.filter(only_audio=True, file_extension='webm').first()
-        ys.download(output_path=filepath)
+        ys.download(output_path=filepath, filename="Output.webm")
         ff = ffmpy.FFmpeg(
-            inputs={f'{filepath}/{yt.title}.webm': None},
+            inputs={f'{filepath}/Output.webm': None},
             outputs={f'{filepath}/{yt.title} - Audio.mp3': None})
         ff.run()
-        os.remove(f'{filepath}/{yt.title}.webm')
+        os.remove(f'{filepath}/Output.webm')
 
         create_toplevel("YTDOWNLOADER - Successfully Downloaded", "Successfully Downloaded")
 
