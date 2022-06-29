@@ -1,6 +1,6 @@
 # ✨ ytDownloader 
 
-<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/kavindu-aka-sid/ytdownloader"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/kavindu-aka-sid/ytdownloader"> <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/itzkavindu/ytDownloader/total?style=flat"> [![CircleCI](https://dl.circleci.com/status-badge/img/gh/itzkavindu/ytDownloader/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/itzkavindu/ytDownloader/tree/master)
+<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/kavindu-aka-sid/ytdownloader"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/kavindu-aka-sid/ytdownloader"> <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/itzkavindu/ytDownloader/total?style=flat">
 ![ytDownloader-banner](https://user-images.githubusercontent.com/81173459/173522511-48b2c0c8-bf12-4d87-9124-3127312afcfa.png)
 
 
