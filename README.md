@@ -1,7 +1,8 @@
 # ✨ ytDownloader 
 
-<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/kavindu-aka-sid/ytdownloader"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/kavindu-aka-sid/ytdownloader"> <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/itzkavindu/ytDownloader/total?style=flat"> 
+<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/kavindu-aka-sid/ytdownloader"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/kavindu-aka-sid/ytdownloader"> <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/itzkavindu/ytDownloader/total?style=flat"> ![GitHub](https://img.shields.io/github/license/itzkavindu/ytDownloader)
 ![ytDownloader-banner](https://user-images.githubusercontent.com/81173459/173522511-48b2c0c8-bf12-4d87-9124-3127312afcfa.png)
+
 
 
 
@@ -51,3 +52,7 @@
 <img alt="Ctk" src="https://img.shields.io/badge/GUI%20was%20Made%20Using-CustomTkinter-9cf?style=for-the-badge&logo=github">
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/kavindunimsara)
+
+# License
+**ytDownloader is licensed under the terms of [GPL-3.0 License](https://github.com/itzkavindu/ytDownloader/blob/master/COPYING)**
+
