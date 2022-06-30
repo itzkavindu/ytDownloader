@@ -1,4 +1,0 @@
-customtkinter==4.4.1
-ffmpy==0.3.0
-pytube==12.1.0
-
