@@ -15,10 +15,15 @@
 
 ## Installation
 
-- Download the **ytDownloader** that is compatible with your operating system from the [Releases](https://github.com/itzkavindu/ytDownloader/releases) Page
+### Windows
+- From [Releases](https://github.com/itzkavindu/ytDownloader/releases), download "ytDownloader-Windows-Installer.exe"
+- Open it and click 'Yes'
+- When the installation is done, open ytDownloader and follow the instructions provided in ["HOW TO USE"](https://github.com/itzkavindu/ytDownloader/edit/master/README.md#how-to-use)
 
-- Unzip the zip file
-- Install the fonts in the **Fonts** folder **(For Linux, execute Install-Fonts.sh to install fonts.)**
+### Linux
+- Download the **ytDownloader** that is compatible with your operating system from the [Releases](https://github.com/itzkavindu/ytDownloader/releases) Page
+- Unzip the tar file
+- execute Install-Fonts.sh to install fonts
 - In your extracted folder, run ytDownloader
 
 ## How to use
