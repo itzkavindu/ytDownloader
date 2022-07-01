@@ -16,7 +16,7 @@
 ## Installation
 
 ### Windows
-- From [Releases](https://github.com/itzkavindu/ytDownloader/releases), download "ytDownloader-Windows-Installer.exe"
+- From [Releases Page](https://github.com/itzkavindu/ytDownloader/releases), download "ytDownloader-Windows-Installer.exe"
 - Open it and click 'Yes'
 - When the installation is done, open ytDownloader and follow the instructions provided in ["HOW TO USE"](https://github.com/itzkavindu/ytDownloader/edit/master/README.md#how-to-use)
 
