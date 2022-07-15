@@ -78,8 +78,8 @@ def confirm():
                      rely=0.65,
                      anchor="w")
 
-def download_mp4():
 
+def download_mp4():
     link = ytlink.get()
     if not link:
         create_toplevel("YTDOWNLOADER - Error", "No valid link in input field")
@@ -94,7 +94,6 @@ def download_mp4():
 
 
 def download_mp3():
-
     link = ytlink.get()
     if not link:
         create_toplevel("YTDOWNLOADER - Error", "No valid link in input field")
