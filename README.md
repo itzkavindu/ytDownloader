@@ -1,6 +1,6 @@
 # ✨ ytDownloader 
 
-<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/kavindu-aka-sid/ytdownloader"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/kavindu-aka-sid/ytdownloader"> <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/itzkavindu/ytDownloader/total?style=flat"> ![GitHub](https://img.shields.io/github/license/itzkavindu/ytDownloader)
+<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/kavindu-aka-sid/ytdownloader"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/kavindu-aka-sid/ytdownloader"> <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/itzkavindu/ytDownloader/total?style=flat"> ![GitHub](https://img.shields.io/github/license/itzkavindu/ytDownloader) ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/itzkavindu/ytDownloader?include_prereleases) ![GitHub top language](https://img.shields.io/github/languages/top/itzkavindu/ytDownloader) [![DeepSource](https://deepsource.io/gh/itzkavindu/ytDownloader.svg/?label=active+issues&show_trend=true&token=PFNDcSLuC7LViMDaBtEszuN3)](https://deepsource.io/gh/itzkavindu/ytDownloader/?ref=repository-badge)
 ![ytDownloader-banner](https://user-images.githubusercontent.com/81173459/173522511-48b2c0c8-bf12-4d87-9124-3127312afcfa.png)
 
 
@@ -15,10 +15,15 @@
 
 ## Installation
 
-- Download the **ytDownloader** that is compatible with your operating system from the [Releases](https://github.com/itzkavindu/ytDownloader/releases) Page
+### Windows
+- From [Releases Page](https://github.com/itzkavindu/ytDownloader/releases), download "ytDownloader-Windows-Installer.exe"
+- Open it and click 'Yes'
+- When the installation is done, open ytDownloader and follow the instructions provided in ["HOW TO USE"](https://github.com/itzkavindu/ytDownloader#how-to-use)
 
-- Unzip the zip file
-- Install the fonts in the **Fonts** folder **(For Linux, execute Install-Fonts.sh to install fonts.)**
+### Linux
+- Download the **ytDownloader** that is compatible with your operating system from the [Releases](https://github.com/itzkavindu/ytDownloader/releases) Page
+- Unzip the tar file
+- execute Install-Fonts.sh to install fonts
 - In your extracted folder, run ytDownloader
 
 ## How to use
@@ -48,6 +53,7 @@
 </a>
 
 # ❤ Thanks for your support and please star if you like it
+<img alt="Python" src="https://forthebadge.com/images/badges/made-with-python.svg">
 <img alt="Pytube" src="https://img.shields.io/badge/Made%20with-Pytube-9cf?style=for-the-badge&logo=github">
 <img alt="Ctk" src="https://img.shields.io/badge/GUI%20was%20Made%20Using-CustomTkinter-9cf?style=for-the-badge&logo=github">
 
