@@ -38,8 +38,14 @@ def create_toplevel(title, message):
     window = customtkinter.CTkToplevel()
     window.geometry("400x200")
 
-    finishedwind = customtkinter.CTkLabel(window, text=message, text_font=finished)
-    finishedwind.pack(side="top", fill="both", expand=True, padx=40, pady=40)
+    finishedwind = customtkinter.CTkLabel(window,
+                                          text=message,
+                                          text_font=finished)
+    finishedwind.pack(side="top",
+                      fill="both",
+                      expand=True,
+                      padx=40,
+                      pady=40)
     window.title(title)
 
 
@@ -54,16 +60,23 @@ def confirm():
         numviews = yt.views
         vidlen = yt.length
 
-        title = customtkinter.CTkLabel(master=frame, text=f"Title : {vidtitle}")
-        title.place(relx=0.05, rely=0.35, anchor="w")
+        title = customtkinter.CTkLabel(master=frame,
+                                       text=f"Title : {vidtitle}")
+        title.place(relx=0.05,
+                    rely=0.35,
+                    anchor="w")
 
-        views = customtkinter.CTkLabel(master=frame, text=f"Number of Views : {numviews:,}")
-        views.place(relx=0.05, rely=0.5, anchor="w")
+        views = customtkinter.CTkLabel(master=frame,
+                                       text=f"Number of Views : {numviews:,}")
+        views.place(relx=0.05,
+                    rely=0.5,
+                    anchor="w")
 
         length = customtkinter.CTkLabel(master=frame,
                                         text=f"Length of Video : {vidlen} secs")
-        length.place(relx=0.05, rely=0.65, anchor="w")
-
+        length.place(relx=0.05,
+                     rely=0.65,
+                     anchor="w")
 
 def download_mp4():
 
@@ -132,20 +145,28 @@ frame = customtkinter.CTkFrame(master=app,
                                border_width=7,
                                border_color="black",
                                fg_color="#181818")
-frame.place(relx=0.5, rely=0.7, anchor=tkinter.CENTER)
+frame.place(relx=0.5,
+            rely=0.7,
+            anchor=tkinter.CENTER)
 
 # ----------------------------Title----------------------------
 
-mainlab = customtkinter.CTkLabel(master=app, text="YTDOWNLOADER", text_font=ytdwntitle)
-mainlab.place(relx=0.5, rely=0.1, anchor=tkinter.CENTER)
+mainlab = customtkinter.CTkLabel(master=app,
+                                 text="YTDOWNLOADER",
+                                 text_font=ytdwntitle)
+mainlab.place(relx=0.5,
+              rely=0.1,
+              anchor=tkinter.CENTER)
 
 # ----------------------------Entry----------------------------
 
 ytlink = customtkinter.CTkEntry(master=app,
                                 placeholder_text="YouTube Link | Enter the link of the YouTube video you wish to "
                                                  "Download",
-                                width=550, justify="center")
-ytlink.place(relx=0.1, rely=0.2)
+                                width=550,
+                                justify="center")
+ytlink.place(relx=0.1,
+             rely=0.2)
 
 # ----------------------Destination-----------------------------
 
@@ -154,7 +175,8 @@ destinationtext = customtkinter.CTkLabel(master=app,
                                          width=550,
                                          justify="center",
                                          fg_color="#424242")
-destinationtext.place(relx=0.1, rely=0.3)
+destinationtext.place(relx=0.1,
+                      rely=0.3)
 
 
 # ----------------------Open Directory-----------------------------
@@ -168,63 +190,113 @@ def directory(first_run=False):
 
 
 # ------------------------Confirm Button-------------------------
-confirmbtn = customtkinter.CTkButton(master=app, text="Confirm", command=confirm, fg_color="white", text_color="black",
-                                     corner_radius=25, hover_color="#757575", width=230, text_font=btns)
-confirmbtn.place(relx=0.329, rely=0.5, anchor=tkinter.CENTER)
+confirmbtn = customtkinter.CTkButton(master=app,
+                                     text="Confirm",
+                                     command=confirm,
+                                     fg_color="white",
+                                     text_color="black",
+                                     corner_radius=25,
+                                     hover_color="#757575",
+                                     width=230,
+                                     text_font=btns)
+confirmbtn.place(relx=0.329,
+                 rely=0.5,
+                 anchor=tkinter.CENTER)
 
 # -----------------------Download Button-------------------------
 
-downloadbtn = customtkinter.CTkButton(master=app, text="Download .MP4",
+downloadbtn = customtkinter.CTkButton(master=app,
+                                      text="Download .MP4",
                                       command=download_mp4,
                                       fg_color="white",
                                       text_color="black",
                                       corner_radius=25,
-                                      hover_color="#757575", width=160, cursor="hand1", text_font=btns)
-downloadbtn.place(relx=0.494, rely=0.42, anchor=tkinter.CENTER)
+                                      hover_color="#757575",
+                                      width=160,
+                                      cursor="hand1",
+                                      text_font=btns)
+downloadbtn.place(relx=0.494,
+                  rely=0.42,
+                  anchor=tkinter.CENTER)
 
 # ---------------------Download audio Button-----------------------
 
-audiodown = customtkinter.CTkButton(master=app, text="Download .MP3",
+audiodown = customtkinter.CTkButton(master=app,
+                                    text="Download .MP3",
                                     command=download_mp3,
                                     fg_color="white",
                                     text_color="black",
                                     corner_radius=25,
-                                    hover_color="#757575", width=160, cursor="hand1", text_font=btns)
-audiodown.place(relx=0.25, rely=0.42, anchor=tkinter.CENTER)
+                                    hover_color="#757575",
+                                    width=160,
+                                    cursor="hand1",
+                                    text_font=btns)
+audiodown.place(relx=0.25,
+                rely=0.42,
+                anchor=tkinter.CENTER)
 
 # ---------------------Download audio Button-----------------------
 
-webmdown = customtkinter.CTkButton(master=app, text="Download .WEBM",
+webmdown = customtkinter.CTkButton(master=app,
+                                   text="Download .WEBM",
                                    command=download_webm,
                                    fg_color="white",
                                    text_color="black",
                                    corner_radius=25,
-                                   hover_color="#757575", width=160, cursor="hand1", text_font=btns)
-webmdown.place(relx=0.74, rely=0.42, anchor=tkinter.CENTER)
+                                   hover_color="#757575",
+                                   width=160,
+                                   cursor="hand1",
+                                   text_font=btns)
+webmdown.place(relx=0.74,
+               rely=0.42,
+               anchor=tkinter.CENTER)
 
 # -----------------------OpenDir Button-------------------------
 
-opendir = customtkinter.CTkButton(master=app, text="Browse",
+opendir = customtkinter.CTkButton(master=app,
+                                  text="Browse",
                                   command=directory,
                                   fg_color="white",
                                   text_color="black",
                                   corner_radius=25,
-                                  hover_color="#757575", width=230, cursor="hand1", text_font=btns)
-opendir.place(relx=0.68, rely=0.5, anchor=tkinter.CENTER)
+                                  hover_color="#757575",
+                                  width=230,
+                                  cursor="hand1",
+                                  text_font=btns)
+opendir.place(relx=0.68,
+              rely=0.5,
+              anchor=tkinter.CENTER)
 
 # --------------YTDownloader on GitHub Button---------------------
 
-githubrepo = customtkinter.CTkButton(master=app, text="YTDownloader on GitHub", command=openweb, corner_radius=50,
-                                     cursor="hand1", fg_color="white", text_color="#171515", hover_color="#757575",
-                                     width=900, text_font=creditfnt)
-githubrepo.place(relx=0.5, rely=0.9, anchor="center")
+githubrepo = customtkinter.CTkButton(master=app,
+                                     text="YTDownloader on GitHub",
+                                     command=openweb,
+                                     corner_radius=50,
+                                     cursor="hand1",
+                                     fg_color="white",
+                                     text_color="#171515",
+                                     hover_color="#757575",
+                                     width=900,
+                                     text_font=creditfnt)
+githubrepo.place(relx=0.5,
+                 rely=0.9,
+                 anchor="center")
 
 # ---------YTDownloader by Kavindu Nimsara 2022 Button-------------
 
-dev = customtkinter.CTkButton(master=app, text="YTDownloader by Kavindu Nimsara 2022", width=800, fg_color="black",
-                              text_color="white", command=developer, hover_color="grey", cursor="heart",
+dev = customtkinter.CTkButton(master=app,
+                              text="YTDownloader by Kavindu Nimsara 2022",
+                              width=800,
+                              fg_color="black",
+                              text_color="white",
+                              command=developer,
+                              hover_color="grey",
+                              cursor="heart",
                               text_font=creditfnt)
-dev.place(relx=0.5, rely=0.95, anchor=tkinter.CENTER)
+dev.place(relx=0.5,
+          rely=0.95,
+          anchor=tkinter.CENTER)
 
 # -----------------------------------------------------------------
 if __name__ == "__main__":
