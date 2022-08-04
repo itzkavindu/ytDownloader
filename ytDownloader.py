@@ -4,6 +4,7 @@ import tkinter
 import webbrowser
 from tkinter import PhotoImage
 from tkinter import filedialog
+from tkinter import messagebox
 
 import customtkinter
 import ffmpy
@@ -34,25 +35,10 @@ def main():
     app.mainloop()
 
 
-def create_toplevel(title, message):
-    window = customtkinter.CTkToplevel()
-    window.geometry("400x200")
-
-    finishedwind = customtkinter.CTkLabel(window,
-                                          text=message,
-                                          text_font=finished)
-    finishedwind.pack(side="top",
-                      fill="both",
-                      expand=True,
-                      padx=40,
-                      pady=40)
-    window.title(title)
-
-
 def confirm():
     link = ytlink.get()
     if not link:
-        create_toplevel("YTDOWNLOADER - Error", "No valid link in input field")
+        messagebox.showwarning("YTDOWNLOADER", "No valid link in input field")
     else:
         yt = YouTube(link)
 
@@ -82,7 +68,7 @@ def confirm():
 def download_mp4():
     link = ytlink.get()
     if not link:
-        create_toplevel("YTDOWNLOADER - Error", "No valid link in input field")
+        messagebox.showwarning("YTDOWNLOADER", "No valid link in input field")
     else:
         confirm()
         yt = YouTube(link)
@@ -90,13 +76,13 @@ def download_mp4():
         ys = yt.streams.get_highest_resolution()
 
         ys.download(output_path=filepath)
-        create_toplevel("YTDOWNLOADER - Successfully Downloaded", "Successfully Downloaded")
+        messagebox.showinfo("YTDOWNLOADER", "Successfully Downloaded")
 
 
 def download_mp3():
     link = ytlink.get()
     if not link:
-        create_toplevel("YTDOWNLOADER - Error", "No valid link in input field")
+        messagebox.showwarning("YTDOWNLOADER", "No valid link in input field")
     else:
         confirm()
         yt = YouTube(link)
@@ -109,13 +95,13 @@ def download_mp3():
         ff.run()
         os.remove(f'{filepath}/Output.webm')
 
-        create_toplevel("YTDOWNLOADER - Successfully Downloaded", "Successfully Downloaded")
+        messagebox.showinfo("YTDOWNLOADER", "Successfully Downloaded"),
 
 
 def download_webm():
     link = ytlink.get()
     if not link:
-        create_toplevel("YTDOWNLOADER - Error", "No valid link in input field")
+        messagebox.showwarning("YTDOWNLOADER", "No valid link in input field")
     else:
         confirm()
 
@@ -124,7 +110,7 @@ def download_webm():
         ys = yt.streams.filter(file_extension='webm').first()
         ys.download(output_path=filepath)
 
-        create_toplevel("YTDOWNLOADER - Successfully Downloaded", "Successfully Downloaded")
+        messagebox.showinfo("YTDOWNLOADER", "Successfully Downloaded")
 
 
 def developer():
